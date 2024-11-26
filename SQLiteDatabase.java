@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 
 public class SQLiteDatabase {
-    public static void main(String[] args){
+    public static void initializeDatabase() {
         String url = "jdbc:sqlite:recipe_manager.db";
 
         //SQL statements for table creation
