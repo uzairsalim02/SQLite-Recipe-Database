@@ -32,7 +32,7 @@ public class RecipeDataAccess {
         String query = """
             SELECT r.name, r.description, r.instructions
             FROM recipes r
-            JOIN recipe_categories rc ON r.recipe_id = rc.recipe_id
+            JOIN RecipeCategories rc ON r.recipe_id = rc.recipe_id
             JOIN categories c ON rc.category_id = c.category_id
             WHERE c.name = ?
             """;
